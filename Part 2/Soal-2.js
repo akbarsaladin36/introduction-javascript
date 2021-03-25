@@ -5,16 +5,15 @@
 
   function searchName(keyword, limit, callback) {
 
-    let slice = name.slice(1, limit);
-
-    return slice.filter(function(el) {
-      return el.toLowerCase().indexOf(keyword.toLowerCase()) !== -1;
+    let execute = name.filter(function(el) {
+      return el.toLowerCase().includes(keyword);
   });
-
-    function printName(result) {
-      console.log(result);
-    }
-
+    let sliceExecute = execute.slice(0, limit);
+    callback(sliceExecute);
   }
 
-  console.log(searchName('an', 5));
+  function output(hasil) {
+    console.log(hasil);
+  }
+
+  console.log(searchName('an', 3, output));
