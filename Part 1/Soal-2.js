@@ -20,7 +20,7 @@
   } else if (nilaiRata2 >= 0) {
     hasilNilai = 'Siswa mendapat nilai E';
   } else {
-    hasilNilai = 'Tidak diketahui.';
+    hasilNilai = 'Nilai setiap mata pelajaran harus diisi.';
   }
 
 console.log(hasilNilai);

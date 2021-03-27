@@ -1,10 +1,15 @@
-let printSegitiga = 5;
+const printSegitiga = 4;
 
-for (let i = printSegitiga; i >= 1; i--) {
-	let tmp = '';
-
-	for (let j = 1; j <= i; j++) {
-		tmp += j;
+if(typeof printSegitiga === "number") {
+	for (let i = printSegitiga; i >= 1; i--) {
+		let tmp = '';
+	
+		for (let j = 1; j <= i; j++) {
+			tmp += j;
+		}
+		console.log(tmp);
 	}
-	console.log(tmp);
+} else {
+	console.log('Data harus Number');
 }
+

@@ -45,6 +45,8 @@ const biodata = {
     interestInCoding: true
 }
 
+console.log(biodata);
+
 console.log(typeof biodata.name);
 console.log(typeof biodata.age);
 console.log(typeof biodata.hobbies);

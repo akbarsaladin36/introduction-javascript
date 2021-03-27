@@ -1,22 +1,14 @@
 // Bagian A
-  let newName = {
-    name: 'Muhammad Akbar Saladin Siregar'
-  };
-  
-  let newEmail = {
-    email: 'asong36@gmail.com'
-  };
-  
-  let newHobby = {
+  let newData = {
+    name: 'Muhammad Akbar Saladin Siregar',
+    email: 'asong36@gmail.com',
     hobby: 'Main laptop, baca buku'
   };
   
   let data = {
     id: 1,
-    ...newName,
     username: "Bret",
-    ...newEmail,
-    ...newHobby,
+    ...newData,
     address: 
     {
     street: "Kulas Light",

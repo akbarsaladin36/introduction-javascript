@@ -15,7 +15,7 @@
   }
 
   //Penggunaan .then() dan .catch()
-  cekHariKerja('senin')
+  cekHariKerja('minggu')
   .then((result)=> {
     console.log(result);
   })
@@ -27,7 +27,7 @@
   //Penggunaan try dan catch
   const cekHariKerja2 = async () => {
     try {
-      let result = await cekHariKerja('selasa');
+      let result = await cekHariKerja('sabtu');
       console.log(result);
     } catch(error) {
       console.log(error);
