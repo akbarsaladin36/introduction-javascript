@@ -2,11 +2,11 @@ function divideAndSort(numbers) {
 
    const division = numbers.toString().split(0);
 
-   for (let num in division) {
-      if (division[num] == "") {
-         division.splice(num, 1);
+   for (let element in division) {
+      if (division[element] == "") {
+         division.splice(element, 1);
       } else {
-         division[num] = division[num].split("").sort().join().replace(/,/g, "");
+         division[element] = division[element].split("").sort().join().replace(/,/g, "");
       }
    }
 
